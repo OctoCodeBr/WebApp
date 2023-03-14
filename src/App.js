@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import "./global.css"
 
-function App() {
+export function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="container">
+      <header className="header">
+        <span>bem vindo</span>
       </header>
-    </div>
-  );
-}
 
-export default App;
+      <form>
+      <div className="inputContainer">
+        <label htmlfor="email">E-mail</label>
+        <input
+         type="text"
+          name="email"
+           id="email"
+           placeholder="fantinelvitor443@gmail.com"
+         />
+      </div>
+
+      <div className="inputContainer">
+        <label htmlfor="password">password</label>
+        <input
+         type="password"
+          name="password"
+           id="password"
+           placeholder="*********"
+         />
+      </div>
+
+      <a href="">esqueci minha senha?</a>
+
+      <button className="button">
+        conectar
+      </button>
+      </form>
+    </div>
+  )
+}

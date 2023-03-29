@@ -1,10 +1,11 @@
 import "./global.css"
 
+
 export function App() {
   return (
     <div className="container">
       <header className="header">
-        <span>bem vindo</span>
+        <h1>Bem-vindo</h1>
       </header>
 
       <form>
@@ -19,7 +20,7 @@ export function App() {
       </div>
 
       <div className="inputContainer">
-        <label htmlfor="password">password</label>
+        <label htmlfor="password">senha</label>
         <input
          type="password"
           name="password"
@@ -30,9 +31,7 @@ export function App() {
 
       <a href="">esqueci minha senha?</a>
 
-      <button className="button">
-        conectar
-      </button>
+      <button type="submit" class="btn btn-outline-success  btn-block">conectar</button>
       </form>
     </div>
   )
